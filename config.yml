@@ -1,0 +1,38 @@
+baseURL: 'https://b4rt.be'
+languageCode: en-us
+title: b4rt.be
+theme: etch
+enableInlineShortcodes: true
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+params:
+  description: My leather portfolio
+  copyright: Copyright © 2026 Bart Van Eynde
+  dark: auto
+  highlight: true
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      title: posts
+      url: /
+      weight: 10
+    - identifier: tags
+      name: tags
+      title: tags
+      url: /tags/
+      weight: 15
+    - identifier: about
+      name: about
+      title: about
+      url: /about/
+      weight: 20
+permalinks:
+  posts: '/:title/'
+  tags: '/tmp/tags/:title/'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    ordered: true

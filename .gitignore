@@ -1,0 +1,4 @@
+.hugo_build.lock
+history.txt
+content/.DS_Store
+public/
